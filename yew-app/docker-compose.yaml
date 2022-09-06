@@ -1,0 +1,10 @@
+version: '3'
+services:
+  yew-app:
+    container_name: yew-app
+    image: yew-app:0.1.0
+    build: .
+    ports:
+    - 8080:8080
+    stdin_open: true
+    tty: true

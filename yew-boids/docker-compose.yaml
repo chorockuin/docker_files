@@ -1,0 +1,10 @@
+version: '3'
+services:
+  yew-boids:
+    container_name: yew-boids
+    image: yew-boids:0.1.0
+    build: .
+    ports:
+    - 8080:8080
+    stdin_open: true
+    tty: true

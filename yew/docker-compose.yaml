@@ -1,0 +1,10 @@
+version: '3'
+services:
+  yew:
+    container_name: yew
+    image: yew:0.1.0
+    build: .
+    ports:
+    - 8080:8080
+    stdin_open: true
+    tty: true

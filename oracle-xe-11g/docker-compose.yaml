@@ -1,0 +1,10 @@
+version: '3'
+services:
+  oracle-xe-11g:
+    container_name: oracle-xe-11g
+    image: jaspeen/oracle-xe-11g
+    ports:
+    - 8080:8080
+    - 1521:1521
+    stdin_open: true
+    tty: true
