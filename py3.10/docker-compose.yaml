@@ -1,0 +1,8 @@
+version: '3'
+services:
+  py3.10:
+    container_name: py3.10
+    image: py3.10:0.1.0
+    build: .
+    stdin_open: true
+    tty: true
