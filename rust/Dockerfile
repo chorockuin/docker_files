@@ -1,11 +1,5 @@
-FROM ubuntu:22.04
+FROM ubuntu22.04:1.0.0
 SHELL ["/bin/bash", "-c"]
-RUN apt update
-RUN apt install -y vim
-RUN apt install -y net-tools
-RUN apt install -y iputils-ping
-RUN apt install -y curl
-RUN apt install -y git
 RUN apt install -y build-essential
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs >> install_rust.sh && chmod 700 install_rust.sh && ./install_rust.sh -y
 ENV PATH="/root/.cargo/bin:${PATH}"

@@ -2,7 +2,7 @@ version: '3'
 services:
   gcc12:
     container_name: gcc12
-    image: gcc12:0.1.0
+    image: gcc12:1.0.0
     build: .
     stdin_open: true
     tty: true

@@ -1,0 +1,8 @@
+version: '3'
+services:
+  ubuntu22.04:
+    container_name: ubuntu22.04
+    image: ubuntu22.04:1.0.0
+    build: .
+    stdin_open: true
+    tty: true

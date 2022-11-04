@@ -1,0 +1,8 @@
+version: '3'
+services:
+  crawling:
+    container_name: crawling
+    image: crawling:1.0.0
+    build: .
+    stdin_open: true
+    tty: true
