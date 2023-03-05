@@ -6,3 +6,5 @@ services:
     build: .
     stdin_open: true
     tty: true
+    volumes:
+      - '$UBUNTU_VOLUME:/root/volume'

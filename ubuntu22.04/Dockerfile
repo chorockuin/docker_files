@@ -8,5 +8,6 @@ RUN apt install -y curl
 RUN apt install -y git
 RUN apt install -y wget
 RUN apt install -y unzip
+RUN mkdir /root/volume
 WORKDIR /root
 ENTRYPOINT ["/bin/bash"]
